@@ -1,0 +1,54 @@
+<!doctype <html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" title="Disabled for Preview-in-Browser: css/general.css">
+<style type="text/css">
+
+
+$color-accent: #698e8f; $color-text: #fff;
+*, *:before, *:after { box-sizing: border-box; }
+body { background: #f5f5f5; }
+h1 {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  span {
+    position: relative;
+    min-height: 50px;
+    padding: 0 15px; margin-bottom: 15px;
+    background: $color-accent;
+    display: block;
+    font-size: 20pt;
+    color: $color-text;
+    font-weight: 800;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+	
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      z-index: -1;
+    }
+    &:before {
+      background: darken($color-accent,10%);
+      transform-origin: 0 0;
+      transform: skewY(30deg);
+    }
+    &:last-child:before { display: none; }
+  }
+}
+
+</style>
+	
+	<title>Codepen</title>
+</head>
+<body>
+
+	<h1>Well this looks neat</h1>
+
+<script src="js/index.js"></script>
+</body>
+</html>
